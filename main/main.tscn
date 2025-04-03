@@ -1,8 +1,21 @@
-[gd_scene format=3 uid="uid://cmeb4g4ak0quc"]
+[gd_scene load_steps=3 format=3 uid="uid://cmeb4g4ak0quc"]
+
+[ext_resource type="PackedScene" uid="uid://c1bpjt6m53b6i" path="res://character.tscn" id="1_tqvuq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxhan"]
+size = Vector2(1173, 20)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
-text = "Test"
+text = "Updated"
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_tqvuq")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(581, 644)
+shape = SubResource("RectangleShape2D_bxhan")
