@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmeb4g4ak0quc"]
+[gd_scene load_steps=4 format=3 uid="uid://cmeb4g4ak0quc"]
 
+[ext_resource type="PackedScene" uid="uid://fvtptorv016o" path="res://plane.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://c1bpjt6m53b6i" path="res://character.tscn" id="1_tqvuq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bxhan"]
@@ -7,12 +8,17 @@ size = Vector2(1173, 20)
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Plane" parent="." instance=ExtResource("1_0xm2m")]
+
 [node name="Label" type="Label" parent="."]
+visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 text = "Updated"
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_tqvuq")]
+visible = false
+position = Vector2(246, 252)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
