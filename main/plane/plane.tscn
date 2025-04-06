@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://fvtptorv016o"]
 
-[ext_resource type="Script" uid="uid://giexu5f8rbkg" path="res://plane.gd" id="1_dpar4"]
-[ext_resource type="Texture2D" uid="uid://ddwo32rb7cwhj" path="res://import/Plane.png" id="1_xytly"]
+[ext_resource type="Script" uid="uid://giexu5f8rbkg" path="res://plane/plane.gd" id="1_dpar4"]
+[ext_resource type="Texture2D" uid="uid://ddwo32rb7cwhj" path="res://plane/Plane.png" id="1_xytly"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lse0n"]
 animations = [{
@@ -23,6 +23,3 @@ sprite_frames = SubResource("SpriteFrames_lse0n")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 build_mode = 1
 polygon = PackedVector2Array(-12, -8, 12, 0, 12, 1, -2, 8, -7, 8, -7, 6, -12, 6, -9, 0)
-
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(300, 0)

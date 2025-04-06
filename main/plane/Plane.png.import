@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddwo32rb7cwhj"
-path="res://.godot/imported/Plane.png-8a827ba262c4e701cfcc10a65a853e2c.ctex"
+path="res://.godot/imported/Plane.png-4f1653c09bd4ecbaf279da05ed1dca78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/Plane.png"
-dest_files=["res://.godot/imported/Plane.png-8a827ba262c4e701cfcc10a65a853e2c.ctex"]
+source_file="res://plane/Plane.png"
+dest_files=["res://.godot/imported/Plane.png-4f1653c09bd4ecbaf279da05ed1dca78.ctex"]
 
 [params]
 
