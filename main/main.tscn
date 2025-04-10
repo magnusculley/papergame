@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmeb4g4ak0quc"]
 
 [ext_resource type="PackedScene" uid="uid://fvtptorv016o" path="res://plane/plane.tscn" id="1_0xm2m"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxhan"]
-size = Vector2(1173, 20)
+[ext_resource type="PackedScene" uid="uid://coqayvlqwndh4" path="res://background.tscn" id="2_0xm2m"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Plane" parent="." instance=ExtResource("1_0xm2m")]
 position = Vector2(41, 31)
+
+[node name="Camera2D" type="Camera2D" parent="Plane"]
 
 [node name="Label" type="Label" parent="."]
 visible = false
@@ -16,8 +16,4 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Updated"
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(581, 644)
-shape = SubResource("RectangleShape2D_bxhan")
+[node name="background" parent="." instance=ExtResource("2_0xm2m")]
