@@ -9,6 +9,7 @@ size = Vector2(1173, 20)
 [node name="Node2D" type="Node2D"]
 
 [node name="Plane" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(41, 31)
 
 [node name="Label" type="Label" parent="."]
 visible = false

@@ -18,8 +18,10 @@ animations = [{
 script = ExtResource("1_dpar4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-5, -1)
 sprite_frames = SubResource("SpriteFrames_lse0n")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-5, -1)
 build_mode = 1
 polygon = PackedVector2Array(-12, -8, 12, 0, 12, 1, -2, 8, -7, 8, -7, 6, -12, 6, -9, 0)
